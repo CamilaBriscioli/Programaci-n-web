@@ -1,8 +1,54 @@
 body{
-    background-color: antiquewhite;
+    margin:0;
+    background-color: #eee9e5;
 }
 
-h1{
-    color: burlywood
+header{
+    display: flex;
+    min-height:70px;
+    background-color: #f7f7f7;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+    cursor: pointer;
+}
+
+a{
+    font-family: sans-serif;
+    margin: 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: #84796f;
+}
+
+.nav_menu li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav_menu a:hover{
+    background-color: #84796f;
+    color:#f7f7f7;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: large;
+    padding: 10px;
+    transition: 0.3;
+}
+
+@media (max-width:480px){
+    header{
+        flex-direction: column;
+    }
 }
 
