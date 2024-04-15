@@ -1,9 +1,13 @@
 body{
     margin:0;
     background-color: #eee9e5;
+    height: 100%;
+    font-family: sans-serif;
 }
 
 header{
+    position: sticky;
+    top: 0;
     display: flex;
     min-height:70px;
     background-color: #f7f7f7;
@@ -22,8 +26,7 @@ header{
     cursor: pointer;
 }
 
-a{
-    font-family: sans-serif;
+.nav_menu a{
     margin: 0;
     font-weight: 600;
     text-decoration: none;
@@ -41,14 +44,119 @@ a{
     border: none;
     cursor: pointer;
     border-radius: 100px;
-    font-size: large;
     padding: 10px;
     transition: 0.3;
+}
+
+.hero-image{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/hero.png) ;
+    background-size: cover;
+    height: 100vh;
+
+    background-position: center;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1{
+    color: #eee9e5;
+}
+
+.hero-text a{
+    border:none;
+    color: #84796f;
+    font-weight: 600;
+    background-color: #eee9e5;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hero-text a:hover{
+    color: #333333;
+    font-size: large;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    background-color: #9782a2;
+    height: 90vh;
+}
+
+.imagen-contenedor, .text-contenedor{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.imagen-contenedor img{
+    max-width: 100%;
+    height: auto;
+}
+
+.text-contenedor{
+    text-align: center;
+    color: #eee9e5;
+}
+
+.temas{
+    height: 70vh;
+    margin-top: 100px;
+}
+
+.temas h2{
+    text-align: center;
+    margin-bottom: 0px;
+    color: #5f4f40;
+    font-size: xx-large;
+}
+
+.columnas-temas{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 0px;
+}
+
+.libros, .series, .peliculas{
+    width: 30%;
+    padding: 40px;
+    text-align: center;
+}
+
+.columnas-temas p{
+    color: #84796f;
+}
+
+.columnas-temas h3{
+    color: #5f4f40;
+}
+
+.boton-libros, .boton-series, .boton-peliculas{
+    border: none;
+    text-decoration: none;
+    background-color: #9782a2;
+    color: #eee9e5;
+    padding: 8px;
+    border-radius: 20px;
 }
 
 @media (max-width:480px){
     header{
         flex-direction: column;
     }
+}
+
+footer{
+    font-size: small;
+    color: #84796f;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 10px;
 }
 
