@@ -150,6 +150,9 @@ header{
     header{
         flex-direction: column;
     }
+    body{
+        margin: 0; 
+    }
 }
 
 footer{
