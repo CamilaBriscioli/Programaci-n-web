@@ -147,6 +147,8 @@ header{
 }
 
 @media (max-width:480px){
+
+    
     .nav_menu{
         display: none;
     }
@@ -158,7 +160,7 @@ header{
     #menu-toggle:checked + .nav_menu{
         display:block;
     }
-    
+
     body{
         margin: 0; 
     }
