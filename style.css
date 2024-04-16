@@ -1,5 +1,6 @@
 body{
     margin:0;
+    padding: 0;
     background-color: #eee9e5;
     height: 100%;
     font-family: sans-serif;
@@ -9,7 +10,7 @@ header{
     position: sticky;
     top: 0;
     display: flex;
-    min-height:70px;
+    height:70px;
     background-color: #f7f7f7;
     justify-content:space-between;
     align-items: center;
@@ -46,6 +47,46 @@ header{
     border-radius: 100px;
     padding: 10px;
     transition: 0.3;
+}
+
+.menu-hamburguesa{
+    display: none;
+}
+
+
+@media (max-width:480px){
+
+    .navheader{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .nav_menu{
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left:0%;
+        width: 100%;
+        background-color:#333333;
+    }
+
+    .nav_menu a{
+        color: #eee9e5;
+    }
+
+    .menu-hamburguesa:checked + .nav_menu{
+        height: 50vh;
+    }
+    body{
+        margin: 0; 
+        padding: 0;
+    }
+}
+
+
+
+.label-hamburguesa{
+    display: none;
 }
 
 .hero-image{
@@ -144,26 +185,6 @@ header{
     color: #eee9e5;
     padding: 8px;
     border-radius: 20px;
-}
-
-@media (max-width:480px){
-
-    
-    .nav_menu{
-        display: none;
-    }
-
-    .menu-hamburguesa{
-        display: block;
-    }
-
-    #menu-toggle:checked + .nav_menu{
-        display:block;
-    }
-
-    body{
-        margin: 0; 
-    }
 }
 
 footer{
