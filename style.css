@@ -1,8 +1,8 @@
 body{
     margin:0;
     padding: 0;
+    width: 100vw;
     background-color: #eee9e5;
-    height: 100%;
     font-family: sans-serif;
 }
 
@@ -10,7 +10,7 @@ header{
     position: sticky;
     top: 0;
     display: flex;
-    height:70px;
+    min-height:70px;
     background-color: #f7f7f7;
     justify-content:space-between;
     align-items: center;
@@ -47,46 +47,6 @@ header{
     border-radius: 100px;
     padding: 10px;
     transition: 0.3;
-}
-
-.menu-hamburguesa{
-    display: none;
-}
-
-
-@media (max-width:480px){
-
-    .navheader{
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
-    .nav_menu{
-        flex-direction: column;
-        position: absolute;
-        top: 90px;
-        left:0%;
-        width: 100%;
-        background-color:#333333;
-    }
-
-    .nav_menu a{
-        color: #eee9e5;
-    }
-
-    .menu-hamburguesa:checked + .nav_menu{
-        height: 50vh;
-    }
-    body{
-        margin: 0; 
-        padding: 0;
-    }
-}
-
-
-
-.label-hamburguesa{
-    display: none;
 }
 
 .hero-image{
@@ -195,3 +155,32 @@ footer{
     padding: 10px;
 }
 
+@media (max-width:660px){
+    
+    body{
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .nav_menu{
+        align-items: center;
+        text-align: center;
+    }
+
+    .columnas-temas{
+        flex-direction: column;
+    }
+
+    .libros, .series, .peliculas{
+        width: calc(100% - 80px);
+    }
+    
+    footer{
+        margin-top: 450px;
+    }
+}
