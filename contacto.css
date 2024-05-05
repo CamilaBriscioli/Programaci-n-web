@@ -1,9 +1,10 @@
-body {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     background-color: #eee9e5;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 header{
@@ -72,36 +73,39 @@ header{
     font-weight: 600; 
 }
 
-
-.entrada-lib{
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.libro{
-    margin-top: 20px;
-    background-color: #f7f7f7;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-
-.img_elementos img{
-    height: 250px;
-}
-
-.datos{
-    padding-left: 20px;
+h1 {
+    text-align: center;
+    margin: 35px 0 20px 0;
     color: #84796f;
 }
 
-.datos p{
-    color: #333333;
+
+.form-control{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+    padding: 10px;
+    border-color: #84796f;
+    width: 80vh;
 }
 
+.grupo{
+    padding: 10px;
+}
+
+.entrada{
+    padding: 5px;
+}
+
+.enviar{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #84796f;
+    color: #eee9e5;
+    display: inline-block;
+}
+
+.boton {
+    text-align: center;
+}
