@@ -106,13 +106,17 @@ header{
 }
 
 .temas{
-    height: 70vh;
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 0;
 }
 
 .temas h2{
-    text-align: center;
-    margin-bottom: 0px;
+    text-align: bottom;
+    margin-top: 50px;
     color: #5f4f40;
     font-size: xx-large;
 }
@@ -120,7 +124,7 @@ header{
 .columnas-temas{
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     margin-top: 0px;
 }
 
@@ -147,12 +151,14 @@ header{
     border-radius: 20px;
 }
 
+
 footer{
     font-size: small;
     color: #84796f;
     text-align: center;
     background-color: #f7f7f7;
     padding: 10px;
+    margin-top: 40px;
 }
 
 @media (max-width:660px){
@@ -172,6 +178,10 @@ footer{
         text-align: center;
     }
 
+    .temas{
+        margin-top: 200px;
+    }
+
     .columnas-temas{
         flex-direction: column;
     }
@@ -179,8 +189,8 @@ footer{
     .libros, .series, .peliculas{
         width: calc(100% - 80px);
     }
-    
+
     footer{
-        margin-top: 320px;
+        margin-top: 300px;
     }
 }
