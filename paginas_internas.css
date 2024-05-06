@@ -21,6 +21,17 @@ header{
     height: 80px;
 }
 
+
+.busqueda{
+    color: #84796f;
+    border-radius: 20px;
+    border-color:#84796f ;
+}
+.input_buscar{
+    margin-left: auto;
+    margin-right: 20px; 
+}
+
 .abrir-menu, .cerrar-menu{
     display: block;
     border: 0;
@@ -91,6 +102,9 @@ header{
     padding: 1rem;
 }
 
+.elemento li{
+    list-style-type: none;
+}
 
 .img_elementos img{
     height: 250px;
@@ -103,5 +117,18 @@ header{
 
 .datos p{
     color: #333333;
+}
+
+.estrellas{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+@media (min-width:660px){
+    .busqueda{
+        width: 40vh;
+    }
 }
 
