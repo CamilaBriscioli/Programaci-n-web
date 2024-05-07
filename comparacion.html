@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Comparación</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="comparacion.css">
 </head>
 <body>
-    <h1>PAGINA COMPARACIONES</h1>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="imagenes/LOGO.jpg" alt="logo img" >
+        </a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-principal">Inicio</a>
+                </li>
+                <li>
+                    <a href="libros.html" class="nav-principal">Libros</a>
+                </li>
+                <li>
+                    <a href="peliculas.html" class="nav-principal">Peliculas</a>
+                </li>
+                <li>
+                    <a href="series.html" class="nav-principal">Series</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="nav-principal">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="comparador">
+        <div class="fila">
+            <div class="celda"><h2>Titulo</h2></div>
+            <div class="celda"><h2>Libros</h2></div>
+            <div class="celda"><h2>Películas</h2></div>
+        </div>
+        <div class="fila">
+            <div class="relleno"><h4>Juegos del hambre</h4></div>
+            <div class="relleno">
+                <div class="formato">
+                    <img src="imagenes/juegos del habre lib.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ac magna a lacus lobortis sagittis. 
+                        Vestibulum id justo id tellus feugiat rutrum.</p>
+                </div>
+            </div>
+            <div class="relleno">
+                <div class="formato">
+                    <img src="imagenes/juegos del hambre peli.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ac magna a lacus lobortis sagittis. 
+                        Vestibulum id justo id tellus feugiat rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="relleno"><h4>En llamas</h4></div>
+            <div class="relleno">
+                <div class="formato">
+                    <img src="imagenes/en llamas lib.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ac magna a lacus lobortis sagittis. 
+                        Vestibulum id justo id tellus feugiat rutrum.</p>
+                </div>
+            </div>
+            <div class="relleno">
+                <div class="formato">
+                    <img src="imagenes/en llamas peli.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ac magna a lacus lobortis sagittis. 
+                        Vestibulum id justo id tellus feugiat rutrum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="relleno"><h4>Sinsajo</h4></div>
+            <div class="relleno">
+                <div class="formato">
+                    <img src="imagenes/sinsajo lib.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ac magna a lacus lobortis sagittis. 
+                        Vestibulum id justo id tellus feugiat rutrum.</p>
+                </div>
+            </div>
+            <div class="relleno">
+                <div class="formato">
+                    <img src="imagenes/sinsajo peli.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed ac magna a lacus lobortis sagittis. 
+                        Vestibulum id justo id tellus feugiat rutrum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/hamburguesa.js"></script>
 </body>
 </html>

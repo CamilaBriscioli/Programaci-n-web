@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eee9e5;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header{
+    top: 0;
+    display: flex;
+    align-items: center;
+    min-height:70px;
+    background-color: #f7f7f7;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.abrir-menu{
+    color: #84796f;
+}
+
+.cerrar-menu{
+    color: #f7f7f7;
+}
+
+.nav{
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    background-color: #84796f;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.3);
+    }
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: end;
+}
+
+.nav-list li a{
+    color: #f7f7f7;
+    text-decoration: none;
+    font-weight: 600; 
+}
+
+
+.comparador {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.fila {
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    gap: 3px;
+}
+
+.celda {
+    width: 25vh;
+    height: 50 px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center; 
+    display: flex; 
+    align-items: center; 
+    background-color: #f7f7f7;
+}
+
+.relleno {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 25vh;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.relleno h4{
+    text-align: center;
+}
+
+.formato{
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    justify-content: center; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 2px; 
+}
+
+.formato img{
+    height: 130px;
+}
+
+
+
+@media (max-width:660px){
+    .celda{
+        width: 20vh;
+    }
+    .relleno{
+        width: 20vh;
+        height: 400px;
+    }
+}
+
