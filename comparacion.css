@@ -7,6 +7,10 @@ body{
     font-family: sans-serif;
 }
 
+body.menu-abierto {
+    overflow: hidden;
+}
+
 header{
     top: 0;
     display: flex;
