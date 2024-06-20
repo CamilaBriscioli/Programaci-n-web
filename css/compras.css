@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #84796f;
     background-color: #eee9e5;
 }
 
@@ -23,17 +24,6 @@ header{
 
 .logo img{
     height: 80px;
-}
-
-
-.busqueda{
-    color: #84796f;
-    border-radius: 20px;
-    border-color:#84796f ;
-}
-.input_buscar{
-    margin-left: auto;
-    margin-right: 20px; 
 }
 
 .abrir-menu, .cerrar-menu{
@@ -87,3 +77,38 @@ header{
     text-decoration: none;
     font-weight: 600; 
 }
+
+
+.product-card {
+    background-color: #f7f7f7;
+    border: 1px solid hwb(0 80% 20%);
+    border-radius: 8px;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 302px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 400px;
+}
+
+.product-card button{
+    margin-left: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:#9782a2;
+    color: #f7f7f7;
+    font-size: medium;
+}
+
