@@ -14,28 +14,37 @@
         </a>
         <div>
             <button class="carrito" id="carrito"><i class="bi bi-cart2"></i></button>
-            <div id="numero" class="diseñoNumero"></div>
+            <div id="numero" class="diseñoNumero">0</div>
         </div>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-principal">Inicio</a></li>
-                <li><a href="libros.html" class="nav-principal">Libros</a></li>
-                <li><a href="series.html" class="nav-principal">Series</a></li>
-                <li><a href="peliculas.html" class="nav-principal">Películas</a></li>
-                <li><a href="comparacion.html" class="nav-principal">Comparación</a></li>
-                <li><a href="contacto.html" class="nav-principal">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-principal">Inicio</a></li>
+            <li><a href="libros.html" class="nav-principal">Libros</a></li>
+            <li><a href="series.html" class="nav-principal">Series</a></li>
+            <li><a href="peliculas.html" class="nav-principal">Películas</a></li>
+            <li><a href="comparacion.html" class="nav-principal">Comparación</a></li>
+            <li><a href="contacto.html" class="nav-principal">Contacto</a></li>
+        </ul>
+    </nav>
     <div class="pagina" id="pagina">
         <div class="product-card">
             <img src="#">
             <div class="product-info">
                 <h2 class="product-title">Nombre del Producto</h2>
                 <p class="product-description">Descripción del producto.</p>
-                <p class="product-price">$XX.XX</p>
+                <p class="product-price">$20</p>
+                <button class="agregar">Añadir a carrito</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="#">
+            <div class="product-info">
+                <h2 class="product-title">velas decorativas</h2>
+                <p class="product-description">Descripción del producto.</p>
+                <p class="product-price">$100</p>
                 <button class="agregar">Añadir a carrito</button>
             </div>
         </div>
@@ -49,7 +58,7 @@
         <div class="total">
             <span>Total:</span>$<span id="total">0.00</span>
         </div>
-        <button>Finalizar la compra</button>
+        <button class="fin">Finalizar la compra</button>
     </div>
     <script src="script/carrito.js"></script>
     <script src="script/hamburguesa.js"></script>
