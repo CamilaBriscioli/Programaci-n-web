@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedorCompra = document.getElementById('contenedorCompra');
     const productoCompra = document.getElementById('productosCompra');
     const numero = document.getElementById('numero');
+    const finalizarButton= document.querySelector('.fin')
     const totalElement = document.getElementById('total');
     let carrito = [];
 
@@ -34,6 +35,49 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    finalizarButton.addEventListener('click', () => {
+        if (carrito.length > 0) {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+
+            swalWithBootstrapButtons.fire({
+                title: "¿Está seguro de finalizar la compra?",
+                text: "¡No va a poder revertirlo!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "Sí, comprar!",
+                cancelButtonText: "No, cancelar!",
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    swalWithBootstrapButtons.fire({
+                        title: "¡Compra realizada con éxito!",
+                        text: "Muchas gracias por confiar en nosotros.",
+                        icon: "success"
+                    }).then(() => {
+                        carrito = [];
+                        updateCarrito();
+                        renderCarrito();
+                        contenedorCompra.classList.add('none');
+                    });
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    swalWithBootstrapButtons.fire({
+                        title: "Cancelado",
+                        text: "Puede seguir navegando y modificando su carrito",
+                        icon: "error"
+                    });
+                }
+            });
+        }
+    });
+
+    
     function updateCarrito() {
         const cantidadTotal = carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
         const precioTotal = carrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
