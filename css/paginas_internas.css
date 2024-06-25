@@ -138,6 +138,7 @@ header{
 @media (max-width:450px){
     .busqueda{
         width: 15vh;
+        margin-left: 20px;
     }
     .elemento{
         flex-direction: column;
