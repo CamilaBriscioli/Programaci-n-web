@@ -139,12 +139,22 @@ header{
 
 
 @media (max-width:660px){
+
     .celda{
-        width: 17.5vh;
+        display: none;
     }
     .relleno{
-        height: 850px;
-        width: 17.5vh;
+        height: 400px;
+        width: 50vh;
+    }
+
+    #titulo{
+        height: 60px;
+    }
+
+    .fila{
+        display: flex;
+        flex-direction: column;
     }
 }
 
