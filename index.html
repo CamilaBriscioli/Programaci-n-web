@@ -5,36 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Camila</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body> 
     <header>
-        <a href="#" class="logo">
-            <img src="imagenes/LOGO.jpg" alt="logo img" >
+        <a href="index.html" class="logo">
+            <img src="imagenes/LOGO.jpg" alt="logo img">
         </a>
-        
-        <nav class="navheader">
-            <ul class="nav_menu">
-                <li class="menu_temas">
-                    <a href="#contenedor-id" class="nav-link">Quién soy</a>
-                </li>
-                <li class="menu_temas">
-                    <a href="#temas_titulo" class="nav-link">Temas</a>
-                </li>
-                <li>
-                    <a href="compras.html" class="nav-link">Tienda</a>
-                </li>
-                <li class="menu_contacto">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                </li>
-                <li class="menu_comparacion">
-                    <a href="comparacion.html" class="nav-link">Comparación</a>
-                </li>
-            </ul>
-        </nav>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
     </header>
+    <nav class="nav" id="nav">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="#temas-lsp" class="nav-principal">Temas</a></li>
+            <li><a href="libros.html" class="nav-principal">Libros</a></li>
+            <li><a href="series.html" class="nav-principal">Series</a></li>
+            <li><a href="peliculas.html" class="nav-principal">Películas</a></li>
+            <li><a href="comparacion.html" class="nav-principal">Comparación</a></li>
+            <li><a href="compras.html" class="nav-principal">Tienda</a></li>
+            <li><a href="contacto.html" class="nav-principal">Contacto</a></li>
+        </ul>
+    </nav>
 
     <div class="hero-image">
         <div class="hero-text">
@@ -87,5 +81,7 @@
     <footer>
         <p>Hecho por Camila Briscioli</p>
     </footer>
+
+    <script src="script/hamburguesa.js"></script>
 </body>
 </html>

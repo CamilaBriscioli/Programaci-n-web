@@ -112,7 +112,7 @@ header{
     justify-content: center; 
     align-items: center; 
     width: 25vh;
-    height: 350px;
+    height: 520px;
     border-radius: 10px;
     background-color: #f7f7f7;
 }
@@ -122,8 +122,8 @@ header{
 }
 
 .formato{
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
     justify-content: center; 
     display: flex; 
@@ -144,7 +144,7 @@ header{
     }
     .relleno{
         width: 20vh;
-        height: 400px;
+        height: 720px;
     }
 }
 
