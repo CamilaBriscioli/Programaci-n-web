@@ -28,10 +28,12 @@ header{
 
 
 .busqueda{
+    width: 25vh;
     color: #84796f;
     border-radius: 20px;
     border-color:#84796f ;
 }
+
 .input_buscar{
     margin-left: auto;
     margin-right: 20px; 
@@ -133,9 +135,28 @@ header{
 }
 
 
-@media (min-width:660px){
+@media (max-width:450px){
     .busqueda{
-        width: 40vh;
+        width: 20vh;
+    }
+    .elemento{
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .img_elementos img{
+        width: 50%; 
+        height: auto; 
+    }
+
+    .datos{
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .estrellas{
+        margin-left: 35%;
     }
 }
 
