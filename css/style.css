@@ -203,15 +203,6 @@ footer{
         padding: 0;
     }
 
-    header{
-        flex-direction: column;
-    }
-
-    .nav_menu{
-        align-items: center;
-        text-align: center;
-    }
-
     .temas{
         margin-top: 200px;
     }
