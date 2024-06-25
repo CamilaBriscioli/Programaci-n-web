@@ -140,11 +140,11 @@ header{
 
 @media (max-width:660px){
     .celda{
-        width: 20vh;
+        width: 17.5vh;
     }
     .relleno{
-        width: 20vh;
-        height: 720px;
+        height: 850px;
+        width: 17.5vh;
     }
 }
 
