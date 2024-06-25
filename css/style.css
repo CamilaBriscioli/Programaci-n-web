@@ -203,8 +203,17 @@ footer{
         padding: 0;
     }
 
+    .contenedor{
+        flex-direction: column;
+        height: 580px;
+    }
+
+    .text-contenedor{
+        width: 90%;
+    }
+
     .temas{
-        margin-top: 200px;
+        margin-top: 240px;
     }
 
     .columnas-temas{
@@ -212,7 +221,7 @@ footer{
     }
 
     .libros, .series, .peliculas{
-        width: calc(100% - 80px);
+        width: 75%;
     }
 
     footer{
