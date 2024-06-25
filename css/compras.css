@@ -120,7 +120,7 @@ header{
 .fin{
     background-color: #eee9e5;
     color: #84796f;
-    width: 300px;
+    width: 60%;
     height: 45px;
     border-radius: 20px;
     border: none;
@@ -254,4 +254,11 @@ header{
 
 .product-card button:active{
     color: #63536b;
+}
+
+@media (max-width:660px){
+    .diseñoNumero{
+        right: 100px;
+    }
+
 }
