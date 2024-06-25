@@ -256,9 +256,8 @@ header{
     color: #63536b;
 }
 
-@media (max-width:660px){
+@media (max-width:500px){
     .diseñoNumero{
         right: 100px;
     }
-
 }
